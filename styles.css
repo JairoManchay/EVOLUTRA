@@ -55,6 +55,7 @@ select {
     display: inline-block;
     padding: 0.5rem;
     border: 1px solid var(--black-opacity);
+    outline: none;
 }
 
 /* ESTILOS REUTILIZABLE */
@@ -618,7 +619,7 @@ select {
     max-width: 50%;
 }
 
-.formulario form {
+form {
     padding: 0.5rem;
     margin: auto;
     display: flex;
