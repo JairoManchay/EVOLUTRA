@@ -94,21 +94,54 @@
                 </ul>
             </section>
 
-            <section id="contactanos">
+            <section id="reclamaciones">
                 <form action="">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellidos">
-                    <input type="text" placeholder="Número de Documento">
-                    <input type="text" placeholder="Correo Electrónico">
-                    <input type="text" placeholder="Número de Teléfono">
+                    <h2>Registrar Reclamo</h2>
+                    <div class="flex">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Apellidos">
+                    </div>
+                    <div class="flex">
+                        <input type="number" placeholder="Número de Documento">
+                        <input type="email" placeholder="Correo Electrónico">
+                    </div>
+                    <input type="number" placeholder="Número de Teléfono">
                     <input type="text" placeholder="Dirección">
                     <input type="text" placeholder="Distrito">
                     <input type="text" placeholder="Ciudad">
-                    <input type="text" placeholder="Tipo de Reclamo">
-                    <input type="text" placeholder="Servicio Contratado">
+                    <div class="flex">
+                        <!-- <input type="text" placeholder="Tipo de Reclamo">
+                        <input type="text" placeholder="Servicio Contratado"> -->
+                        <select name="" id="">
+                            <option value="">Seleccione un tipo de reclamo</option>
+                            <option value="cobro_indebido">Cobro indebido</option>
+                            <option value="servicio_no_prestado">Servicio no prestado</option>
+                            <option value="publicidad_enganosa">Publicidad engañosa</option>
+                            <option value="demora_en_la_atencion">Demora en la atención</option>
+                            <option value="producto_defectuoso">Producto defectuoso</option>
+                            <option value="fallas_tecnicas">Fallas técnicas</option>
+                            <option value="mala_atencion">Mala atención al cliente</option>
+                            <option value="error_facturacion">Error en la facturación</option>
+                            <option value="problemas_entrega">Problemas con la entrega</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Seleccione un servicio</option>
+                            <option value="diseno_grafico">Diseño gráfico</option>
+                            <option value="gestion_redes">Gestión de redes sociales</option>
+                            <option value="campanas_publicitarias">Campañas publicitarias</option>
+                            <option value="seo">Posicionamiento SEO</option>
+                            <option value="desarrollo_web">Desarrollo web</option>
+                            <option value="fotografia_video">Fotografía y video</option>
+                            <option value="branding">Branding y estrategia de marca</option>
+                            <option value="email_marketing">Email marketing</option>
+                            <option value="consultoria_digital">Consultoría digital</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
                     <textarea name="" id="" placeholder="Redactar"></textarea>
 
-                    <input type="submit" value="enviar">
+                    <input type="submit" value="enviar" class="btn btn-degrade">
                 </form>
             </section>
 
