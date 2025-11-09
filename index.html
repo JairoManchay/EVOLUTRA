@@ -14,6 +14,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="js/scrollreveal.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 </head>
 
 <body id="inicio">
@@ -292,26 +295,29 @@
 
         <section id="contactanos">
             <div class="formulario">
-                <img src="img/contacto.jpg" alt="">
-                <form action="">
+                <img src="img/imgContacto.jpg" alt="imagen de contacto">
+                <form action="" id="contact-form">
                     <h2 class="title bottom">Contáctanos</h2>
                     <p class="description bottom">Impulsa tu negocio con los que saben, no pierdas más el tiempo.</p>
                     <div class="flex">
-                        <input type="text" placeholder="Nombre Completo">
-                        <input type="text" placeholder="Correo Electrónico">
+                        <input type="text" name="from_name" placeholder="Nombre Completo">
+                        <input type="email" name="user_email" placeholder="Correo Electrónico">
                     </div>
                     <div class="flex">
-                        <input type="text" placeholder="Tipo de Negocio">
-                        <input type="text" placeholder="Servicio a Contratar">
+                        <input type="text" name="business_type" placeholder="Tipo de Negocio">
+                        <select name="service_type" id="" aria-placeholder="servicio a contratar">
+                            <option value="-" class="text-light">Servicio a elegir</option>
+                            <option value="desarrollo_web">Desarrollo Web</option>
+                            <option value="diseno_digital">Diseño Digital</option>
+                            <option value="marketing_digital">Marketing Digital</option>
+                        </select>
                     </div>
-                    <!-- <select name="" id="">
-                        <option value="">Landin Page</option>
-                        <option value="">Página Web</option>
-                        <option value="">App Empresarial</option>
-                    </select> -->
-                    <textarea name="" id="" placeholder="Cuentanos a Detalle"></textarea>
+                    <textarea name="message" id="" placeholder="Cuentanos a Detalle"></textarea>
 
                     <input class="btn btn-degrade" type="submit" value="Enviar">
+
+                    <!-- Mensaje de estado -->
+                    <div id="status-message"></div>
                 </form>
             </div>
         </section>
@@ -327,12 +333,6 @@
                 </li>
                 <li>
                     <a href="terminosCondiciones.html">Términos y condiciones</a>
-                </li>
-                <li>
-                    <a href="">Política de Cookies</a>
-                </li>
-                <li>
-                    <a href="">Política de términos y condiciones de contratación</a>
                 </li>
                 <li>
                     <a href="libroReclamaciones.html"><i class='bx bx-book'></i> Libro de reclamaciones</a>
@@ -376,6 +376,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/showPlans.js"></script>
+    <script src="js/email.js"></script>
 </body>
 
 </html>

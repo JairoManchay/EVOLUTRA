@@ -26,6 +26,7 @@ p,
 a,
 li,
 input,
+select,
 textarea {
     font-family: var(--font-family);
 }
@@ -48,7 +49,8 @@ img {
 }
 
 input,
-textarea {
+textarea,
+select {
     width: 100%;
     display: inline-block;
     padding: 0.5rem;
@@ -56,6 +58,12 @@ textarea {
 }
 
 /* ESTILOS REUTILIZABLE */
+.text-light{
+    color: var(--black-opacity);
+    background: transparent;
+    border: 1px solid var(--black-opacity);
+}
+
 .celeste {
     color: #68E2F2;
 }
@@ -354,7 +362,7 @@ textarea {
     font-size: 0.85rem;
 }
 
-@media (min-width: 440px) {
+@media (max-width: 440px) {
     .card-back ul {
         font-size: 0.70rem;
     }
@@ -616,6 +624,15 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+
+.status-message{
+    margin-top: 15px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    display: none; 
+    text-align: center;
 }
 
 .footer {
